@@ -35,7 +35,7 @@
     <hippo.services.version>4.0.2</hippo.services.version>
     <maven.plugin.site.version>3.6</maven.plugin.site.version>
     <slf4j.version>1.7.25</slf4j.version>
-    <log4j2.version>2.11.1</log4j2.version>
+    <log4j2.version>2.16.0</log4j2.version>
   </properties>
   <modules>
     <module>common</module>
