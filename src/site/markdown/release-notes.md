@@ -1,5 +1,5 @@
 <!--
-  Copyright 2018-2019 Hippo B.V. (http://www.onehippo.com)
+  Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -15,6 +15,24 @@
   -->
 
 ## Version Compatibility
+| Version | Bloomreach XM Version |
+|---------|-----------------------|
+| 2.x     | 16.x                  |
+| 1.x     | 12.x                  |
+
+## Release Notes
+
+### 2.0.0
++ [FORGE-XXX](https://issues.onehippo.com/browse/FORGE-XXX) : Upgrade to Bloomreach Experience Manager 16
+
+### 1.0.4
++ bug fixes
+
+### 1.0.3
++ bug fixes
+
+### 1.0.2
++ bug fixes
 
 ### 1.0.1 
 + Unwrap Spring wrappers
