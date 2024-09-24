@@ -23,7 +23,7 @@
 ## Release Notes
 
 ### 2.0.0
-+ [FORGE-XXX](https://issues.onehippo.com/browse/FORGE-XXX) : Upgrade to Bloomreach Experience Manager 16
++ [FORGE-555](https://issues.onehippo.com/browse/FORGE-555) : Upgrade to Bloomreach Experience Manager 16
 
 ### 1.0.4
 + bug fixes
