@@ -1,5 +1,5 @@
 <!--
-  Copyright 2018 Hippo B.V. (http://www.onehippo.com)
+  Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -15,17 +15,17 @@
   -->
 ## Installation of the Servlet Filter Decorators  plugin
 
-These instructions assume a Hippo CMS project based on the Hippo website archetype, i.e. a Maven multi-module project 
-with parent pom `org.onehippo.cms7:hippo-cms7-release` and consisting of at least three sub-modules: cms, site and bootstrap.
+These instructions assume a brXM project based on the Bloomreach website archetype, i.e. a Maven multi-module project 
+with parent pom `org.onehippo.cms7:hippo-cms7-release` and consisting of at least three sub-modules: cms, site and repository-data.
 
 ### Forge Repository
 In the main pom.xml of the project, in the repositories section, add this repository if it is not configured there yet. 
 
 ```
 <repository>
-  <id>hippo-forge</id>
+  <id>bloomreach-forge</id>
   <name>Bloomreach Forge maven 2 repository.</name>
-  <url>https://maven.onehippo.com/maven2-forge/</url>
+  <url>https://maven.bloomreach.com/maven2-forge/</url>
   <snapshots>
     <enabled>false</enabled>
   </snapshots>
@@ -71,7 +71,7 @@ Add this dependency to the `<dependencies>` section of the site/pom.xml. It cont
 ```
 
 Add the following filter to the site's web.xml. It should be defined as **second** filter mapping in chain so just after 
-CharacterEncodingFilter (in a standard Hippo project).
+CharacterEncodingFilter (in a standard brXM project).
 
 ```  
   <filter>
