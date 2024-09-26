@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Hippo B.V. (http://www.onehippo.com)
+ * Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 
 package org.onehippo.forge.servlet.decorators.cms;
 
+import javax.jcr.Session;
+
 import org.onehippo.cms7.services.HippoServiceRegistry;
 import org.onehippo.forge.servlet.decorators.ConfigurableDecoratorFilter;
 import org.onehippo.forge.servlet.decorators.service.CmsDecoratorConfigurationLoader;
 import org.onehippo.forge.servlet.decorators.service.ServletDecoratorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.jcr.Session;
 
 public class CmsDecoratorFilter extends ConfigurableDecoratorFilter {
 

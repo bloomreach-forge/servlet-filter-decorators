@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Hippo B.V. (http://www.onehippo.com)
+ * Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 
 package org.onehippo.forge.servlet.decorators.service;
 
+import javax.jcr.Node;
+import javax.jcr.Session;
+
 import org.onehippo.cms7.services.HippoServiceRegistry;
 import org.onehippo.repository.modules.AbstractReconfigurableDaemonModule;
 import org.onehippo.repository.modules.ProvidesService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.jcr.Node;
-import javax.jcr.Session;
 
 @ProvidesService(types = ServletDecoratorService.class)
 public class ServletDecoratorModule extends AbstractReconfigurableDaemonModule {
@@ -43,12 +43,12 @@ public class ServletDecoratorModule extends AbstractReconfigurableDaemonModule {
     @Override
     protected void doInitialize(final Session session) {
         service = new ServletDecoratorServiceImpl(session);
-        HippoServiceRegistry.registerService(service, ServletDecoratorService.class);
+        HippoServiceRegistry.register(service, ServletDecoratorService.class);
     }
 
     @Override
     protected void doShutdown() {
-        HippoServiceRegistry.unregisterService(service, ServletDecoratorService.class);
+        HippoServiceRegistry.unregister(service, ServletDecoratorService.class);
     }
 
 }

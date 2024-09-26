@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2018 Hippo B.V. (http://www.onehippo.com)
+  Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,29 +19,26 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.onehippo.cms7</groupId>
-    <artifactId>hippo-cms7-project</artifactId>
-    <version>29.2</version>
+    <artifactId>hippo-cms7-release</artifactId>
+    <version>16.0.0</version>
   </parent>
+
   <groupId>org.onehippo.forge.servlet-filter-decorators</groupId>
   <artifactId>servlet-filter-decorators</artifactId>
-  <version>1.0.5-SNAPSHOT</version>
+  <version>2.0.0</version>
   <packaging>pom</packaging>
   <name>Servlet filter decorators module</name>
   <description>Servlet filter decorators module</description>
+
   <properties>
-    <hippo.cms.version>5.0.2</hippo.cms.version>
-    <hippo.hst.version>5.0.2</hippo.hst.version>
-    <hippo.repository.version>5.0.2</hippo.repository.version>
-    <hippo.services.version>4.0.2</hippo.services.version>
-    <maven.plugin.site.version>3.6</maven.plugin.site.version>
-    <slf4j.version>1.7.25</slf4j.version>
-    <log4j2.version>2.11.1</log4j2.version>
   </properties>
+
   <modules>
     <module>common</module>
     <module>hst</module>
     <module>cms</module>
   </modules>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -90,8 +87,8 @@
         <version>${hippo.hst.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
         <scope>provided</scope>
       </dependency>
@@ -138,27 +135,27 @@
 
   <distributionManagement>
     <repository>
-      <name>Hippo Maven 2 Forge Repository</name>
-      <id>hippo-maven2-forge</id>
-      <url>https://maven.onehippo.com/content/repositories/forge-releases/</url>
+      <name>Bloomreach Maven 2 Forge Repository</name>
+      <id>bloomreach-maven2-forge</id>
+      <url>https://maven.bloomreach.com/content/repositories/forge-releases/</url>
       <uniqueVersion>false</uniqueVersion>
     </repository>
   </distributionManagement>
 
   <issueManagement>
-    <url>https://issues.onehippo.com/browse/HIPFORGE</url>
+    <url>https://issues.onehippo.com/browse/FORGE</url>
   </issueManagement>
 
   <repositories>
     <repository>
-      <id>hippo-maven2</id>
-      <name>Hippo Maven 2 Repository</name>
-      <url>https://maven.onehippo.com/maven2/</url>
+      <id>bloomreach-maven2</id>
+      <name>Bloomreach Maven 2 Repository</name>
+      <url>https://maven.bloomreach.com/repository/maven2/</url>
     </repository>
     <repository>
-      <id>hippo-forge</id>
+      <id>bloomreach-forge</id>
       <name>Bloomreach Forge maven 2 repository.</name>
-      <url>https://maven.onehippo.com/maven2-forge/</url>
+      <url>https://maven.bloomreach.com/repository/maven2-forge/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
