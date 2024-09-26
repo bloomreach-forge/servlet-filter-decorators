@@ -25,7 +25,7 @@
 
   <groupId>org.onehippo.forge.servlet-filter-decorators</groupId>
   <artifactId>servlet-filter-decorators</artifactId>
-  <version>1.0.5-SNAPSHOT</version>
+  <version>2.0.0</version>
   <packaging>pom</packaging>
   <name>Servlet filter decorators module</name>
   <description>Servlet filter decorators module</description>
