@@ -1,5 +1,5 @@
 <!--
-  Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
+  Copyright 2026 Bloomreach B.V. (http://www.bloomreach.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -17,10 +17,14 @@
 ## Version Compatibility
 | Version | Bloomreach XM Version |
 |---------|-----------------------|
+| 3.x     | 17.x                  |
 | 2.x     | 16.x                  |
 | 1.x     | 12.x                  |
 
 ## Release Notes
+
+### 3.0.0
++ [FORGE-617](https://bloomreach.atlassian.net/browse/FORGE-617) : Upgrade to Bloomreach Experience Manager 17
 
 ### 2.0.0
 + [FORGE-555](https://issues.onehippo.com/browse/FORGE-555) : Upgrade to Bloomreach Experience Manager 16
