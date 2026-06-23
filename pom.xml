@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2024 Bloomreach B.V. (http://www.bloomreach.com)
+  Copyright 2026 Bloomreach B.V. (http://www.bloomreach.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.onehippo.cms7</groupId>
     <artifactId>hippo-cms7-release</artifactId>
-    <version>17.0.0</version>
+    <version>17.1.0</version>
   </parent>
 
   <groupId>org.onehippo.forge.servlet-filter-decorators</groupId>
@@ -143,7 +143,7 @@
   </distributionManagement>
 
   <issueManagement>
-    <url>https://issues.onehippo.com/browse/FORGE</url>
+    <url>https://bloomreach.atlassian.net/browse/FORGE</url>
   </issueManagement>
 
   <repositories>
